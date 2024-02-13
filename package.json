@@ -1,11 +1,10 @@
 {
   "name": "@bayudev/react-native-floating-button",
-  "version": "0.0.1",
-  "main": "src/index.ts",
-  "types": "src/types.ts",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/",
-    "src/"
+    "dist/"
   ],
   "scripts": {
     "lint": "eslint \"src/**/*.{ts, tsx}\"",
