@@ -9,6 +9,7 @@ export interface FloatingButtonProps {
   maxRight?: number;
   minHeight?: number;
   maxHeight?: number;
+  currentPosition?: "LEFT" | "RIGHT";
 }
 
 export interface FloatingButtonMethods {

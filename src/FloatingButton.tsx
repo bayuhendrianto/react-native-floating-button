@@ -4,10 +4,7 @@ import React, {
   useImperativeHandle,
   useState,
 } from "react";
-import {
-  StyleSheet,
-  Dimensions,
-} from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import Animated, {
   useSharedValue,
@@ -30,6 +27,7 @@ export const FloatingButton = forwardRef<
       maxHeight = width / 2.8,
       maxLeft = 10,
       maxRight = width - width / 4.5,
+      currentPosition = "LEFT",
       children,
     }: FloatingButtonProps,
     ref
@@ -52,7 +50,7 @@ export const FloatingButton = forwardRef<
     const contentColor = useSharedValue(styles.container.backgroundColor);
 
     const contentPosition = useSharedValue({
-      horizontal: MAX_RIGHT,
+      horizontal: currentPosition === "RIGHT" ? MAX_RIGHT : MAX_LEFT,
       vertical: MAX_HEIGHT - width / 2,
     });
     const contextHorizontal = useSharedValue(0);
