@@ -2,6 +2,30 @@
 
 **A component Floating Button built with Reanimated v3+ and React Native Gesture handler V2+**
 
+## Version
+
+| Expo SDK           | React Native        | Version             |
+| ------------------ | ------------------- | ------------------- |
+| <= 52              | <= 0.76.x           | <= 0.0.4            |
+| >= 53              | <= 0.79.x           | >= 2.0.0            |
+
+
+## EXPO SDK <= 52 and React Native <= 0.76.x, install with version 0.0.4
+```sh
+npm install @bayudev/react-native-floating-button@0.0.4
+```
+```sh
+yarn add @bayudev/react-native-floating-button@0.0.4
+```
+
+## EXPO SDK >= 53 and React Native <= 0.79.x, install with version 2.0.0
+```sh
+npm install @bayudev/react-native-floating-button@2.0.0
+```
+```sh
+yarn add @bayudev/react-native-floating-button@2.0.0
+```
+
 ## Getting Started
 
 To use the `FloatingButton` component, you first need to install the package via npm or yarn. Run either of the following commands:
